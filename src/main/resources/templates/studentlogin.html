@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label,input,button {
+            display: block;
+margin: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container justify-content-center" style="padding: 100px;">
+
+  <form method="post" th:action="@{/studentlogin}" th:object="${student}">
+    <label>Enter Email</label>
+    <input name="email" style="height: 30px;width: 700px" th:field="*{email}" id="email">
+    <label>Enter Password</label>
+    <input name="password" style="height: 30px;width: 700px" th:field="*{password}" id="password">
+      <button class="btn btn-primary" type="submit">Login </button>
+  </form>
+</div>
+</body>
+</html>

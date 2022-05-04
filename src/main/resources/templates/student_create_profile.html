@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Creation</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+  <form class="row g-3" th:action="@{/storeddata}" th:object="${student}" method="post">
+    <div class="col-md-6">
+      <label class="form-label" >First Name</label>
+      <input type="text" class="form-control" placeholder="Enter FirstName" name="firstName" th:field="*{firstName}">
+    </div>
+    <div class="col-md-6">
+      <label for="inputLastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Enter LastName" name="lastName" th:field="*{lastName}">
+    </div>
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email" name="email" th:field="*{email}">
+    </div>
+    <div class="col-12">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="text" class="form-control" id="inputPassword" placeholder="Ener Password" name="password" th:field="*{password}">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+      <a type="submit" class="btn btn-primary" th:href="@{/studentloginpage}">Click Here to Login</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>
