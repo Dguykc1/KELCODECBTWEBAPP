@@ -27,9 +27,9 @@ int second=0,minute=0,hour=0;int i=0;
   //public String getStoredData(Model model){
   //        return "storeddata";
   //    }
-    @GetMapping("/welcomepage")
+    @GetMapping("/index")
     public String getWelcomePage(Model model){
-        return "welcomepage";
+        return "index";
     }
 
     @GetMapping("/signup/new")
