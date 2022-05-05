@@ -18,12 +18,13 @@
 <body>
 <div class="container">
     <div class="headerOfPage">
-    <p id="homePageTitle">WELCOME TO CODEBLAZE ACADEMY CBT WEB APP</p>
-        <a th:href="@{/signup/new}">Create Profile Or Login</a>
-        <a th:href="@{/storeddata}">View Stored Student Data</a>
-        <a th:href="@{/TestArena}">Start Test</a>
+    <p>WELCOME TO CODEBLAZE ACADEMY CBT WEB APP</p>
+        <a th:href="@{/signup/new}">CREATE PROFILE OR LOGIN</a>
+        <a th:href="#{contact}">CONTACT</a>
     <img class="two" th:src="@{/school.jpg}" width="200" height="200">
     </div>
+    <a th:href="@{/storeddata}">View Stored Student Data</a>
+    <a th:href="@{/TestArena}">Start Test</a>
     <div>
         <img th:src="@{/kcweblogo.webp}" width="400" height="300">
     </div>
@@ -31,7 +32,11 @@
         <h3>The Aim of This Web app is to enable Lecturers/Teachers of Schools to be able to carry out all their test
         for Students</h3>
     </div>
+
     <br>
+    <p style="font-size: 10rem; background: green;color: white">WEBSITE BUILDING IN PROGRESS</p>
+
+
     <br>
     <br>
     <br>
@@ -81,23 +86,16 @@
     <br>
     <br>
     <br>
+    <br> <br>
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="contact">
+        <img th:src="@{/watsaplogo.webp}" width="100%" height="100%" id="contact">
+    </div>
     <br>
     <br>
     <br>
@@ -155,22 +153,10 @@
     <br>
     <br>
     <br>
-    <br>
-    <br> <br>
-    <br>
+
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a th:href="#{homePageTitle}">back to the top</a>
+    <a th:href="#{contact}">back to the top</a>
 </div>
 </body>
 </html>
