@@ -23,10 +23,6 @@ int second=0,minute=0,hour=0;int i=0;
     public WelcomePageController(StudentService studentService) {
         this.studentService = studentService;
     }
-  //  @GetMapping("/storeddata")
-  //public String getStoredData(Model model){
-  //        return "storeddata";
-  //    }
     @GetMapping("/index")
     public String getWelcomePage(Model model){
         return "index";
@@ -45,7 +41,7 @@ public String getSuccessMessagePage(Model model){
 @PostMapping("/storeddata")
 public String storeData(@ModelAttribute("student") Student student,Model model,Long id){
 studentService.storeStudentData(student);
-        Student person=studentService.storeStudentData(student);
+    
 return "redirect:/successmessage";
 }
 @GetMapping("/storeddata")
