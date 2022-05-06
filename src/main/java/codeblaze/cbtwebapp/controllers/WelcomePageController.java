@@ -38,7 +38,7 @@ public String getSuccessMessagePage(Model model){
         model.addAttribute("student",student);
         return "student_create_profile";
     }
-@PostMapping("/storeddata")
+@PostMapping("/storeddata/id")
 public String storeData(@ModelAttribute("student") Student student,Model model,Long id){
 studentService.storeStudentData(student);
     
