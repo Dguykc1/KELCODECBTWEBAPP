@@ -5,9 +5,18 @@ xmlns:th="http://www.thymeleaf.org">
     <meta charset="UTF-8">
     <title>Student Profile Creation</title>
     <link rel="stylesheet" th:href="@{/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-<div class="container">
+  <div class="container">
+  <div class="headerOfPage">
+    <h4>KELCODE SCHOOL MANAGEMENT APP</h1>
+      <a th:href="@{/signup/new}">CREATE PROFILE OR LOGIN</a>
+      <a th:href="#{contact}">CONTACT</a>
+      <img class="two" th:src="@{/kcweblogo.webp}" style="width:9rem;height:8rem">
+  </div>
+  <nav th:replace="/fragments/navfragments/studentcreationnav::main-nav"></nav>
+<div class="container" style="background-color: orange;">
   <form class="row g-3" th:action="@{/storeddata}" th:object="${student}" method="post">
     <div class="col-md-6">
       <label class="form-label" >First Name</label>
@@ -30,6 +39,7 @@ xmlns:th="http://www.thymeleaf.org">
       <a type="submit" class="btn btn-primary" th:href="@{/studentloginpage}">Click Here to Login</a>
     </div>
   </form>
+</div>
 </div>
 </body>
 </html>

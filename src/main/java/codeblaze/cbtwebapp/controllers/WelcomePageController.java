@@ -31,7 +31,11 @@ int second=0,minute=0,hour=0;int i=0;
     public String getWelcomePage(Model model){
         return "index";
     }
-
+    @GetMapping("/successmessage")
+public String getSuccessMessagePage(Model model){
+     model.addAttribute("welcomemessage", "Login Successful ,Welcome to CodeBlaze Academy School Web app");
+    return "successmessage";
+}
     @GetMapping("/signup/new")
     public  String getSignUpPage(Model model){
         Student student=new Student();
@@ -42,7 +46,7 @@ int second=0,minute=0,hour=0;int i=0;
 public String storeData(@ModelAttribute("student") Student student,Model model,Long id){
 studentService.storeStudentData(student);
         Student person=studentService.storeStudentData(student);
-return "redirect:/storeddata";
+return "redirect:/successmessage";
 }
 @GetMapping("/storeddata")
     public String getStoredData(Model model){

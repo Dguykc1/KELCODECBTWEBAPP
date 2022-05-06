@@ -1,38 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CodeBlaze Academy CBT web app</title>
-   <meta http-equiv="X-UA-Compatible">
-    <link rel="stylesheet" th:href="@{/bootstrap.min.css}">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <style>
-        .headerOfPage{
-            flex-direction: row;
-            display: flex;
-            justify-content: space-between;
-            background: yellow;
-        }
-        .contact{
-            flex-direction: row;
-            display: flex;
-            justify-content: space-between;
-            height: 300px;
-        }
-    </style>
-</head>
+<head th:replace="/fragments/headfragments/homehead::head"></head>
 <body>
 <div class="container">
     <div class="headerOfPage">
-    <p>WELCOME TO CODEBLAZE ACADEMY CBT WEB APP</p>
+    <h4>KELCODE SCHOOL MANAGEMENT APP</h1>
         <a th:href="@{/signup/new}">CREATE PROFILE OR LOGIN</a>
         <a th:href="#{contact}">CONTACT</a>
-    <img class="two" th:src="@{/school.jpg}" width="200" height="200">
-    </div>
+    <img class="two" th:src="@{/kcweblogo.webp}" style="width:9rem;height:8rem">
+    </div >
+   <nav th:replace="/fragments/navfragments/homenav::main-nav"></nav>
+   <div class="textcolor">
     <a th:href="@{/storeddata}">View Stored Student Data</a>
     <a th:href="@{/TestArena}">Start Test</a>
-    <div>
-        <img th:src="@{/kcweblogo.webp}" width="400" height="300">
     </div>
     <div>
         <h3>The Aim of This Web app is to enable Lecturers/Teachers of Schools to be able to carry out all their test
@@ -40,7 +20,7 @@
     </div>
 
     <br>
-    <p style="font-size: 10rem; background: green;color: white">WEBSITE BUILDING IN PROGRESS</p>
+    <p style="font-size: 10rem; background: green;color: rgb(255, 255, 255)">WEBSITE BUILDING IN PROGRESS</p>
 
 
     <br>
