@@ -41,7 +41,6 @@ public String getSuccessMessagePage(Model model){
 @PostMapping("/storeddata/id")
 public String storeData(@ModelAttribute("student") Student student,Model model,Long id){
 studentService.storeStudentData(student);
-    
 return "redirect:/successmessage";
 }
 @GetMapping("/storeddata")
