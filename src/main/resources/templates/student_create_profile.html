@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
 xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/fragments/head::head-home"></head>
+<head th:replace="/head::head-home"></head>
 <body>
   <div class="container">
   <div class="headerOfPage">
@@ -11,7 +11,7 @@ xmlns:th="http://www.thymeleaf.org">
       <img class="two" th:src="@{/kcweblogo.webp}" style="width:9rem;height:8rem">
   </div>
   <div>
-  <nav th:replace="/fragments/nav::nav-create"></nav>
+  <nav th:replace="/nav::nav-create"></nav>
   </div>
   <div id="success-msg" th:if="${signupSuccess}" class="alert alert-dark">
     <span> You successfully signed up! Please continue to the <a th:href="@{/studentloginpage}">login</a> page.</span>
