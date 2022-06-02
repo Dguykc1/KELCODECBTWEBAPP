@@ -2,12 +2,21 @@
      padding-left: 1rem;
      flex-direction: row;
      display: flex;
+     padding: 2%;
      height: 8rem;
      justify-content: space-between;
-     background:#627116;
+     background:#71164b;
     color: white;
  }
+.headerOfPage .navigationlist{
+  list-style: none;
+  display: flex;
 
+}
+.headerOfPage .navigationlist li{
+margin-right: 10px;
+
+}
  .contact {
      flex-direction: row;
      display: flex;
@@ -16,4 +25,25 @@
  }
  a{
    color: white;
+ }
+ a:hover{
+color:yellow;
+ }
+ .createprofile .info{
+  border: 2px solid green;
+  width: 100%;
+  color: white;
+  background-color: rgb(17, 17, 16);
+  height: 100vh;
+
+ }
+ .createprofile .info p{
+   margin: 10%;
+ }
+ div.info h2{
+   text-align: center;
+ }
+ .formdiv{
+   height: 100vh;
+   background-color: skyblue;
  }

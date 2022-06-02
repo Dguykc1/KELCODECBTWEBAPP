@@ -11,180 +11,30 @@
 <body>
 <div class="container">
     <div class="headerOfPage">
-    <h4>KELCODE SCHOOL MANAGEMENT APP</h1>
-        <a th:href="@{/signup/new}">CREATE PROFILE OR LOGIN</a>
-        <a th:href="#{contact}">CONTACT</a>
-    <img class="two" th:src="@{/kcweblogo.webp}" style="width:9rem;height:8rem">
-    </div>
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color:orange">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/index}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Teachers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/signup/new}">Students</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Others
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <h4>KELCODE SCHOOL MANAGEMENT APP</h4>
+    <nav>
+        <ul class="navigationlist">
+            <li><a th:href="@{'#formdiv'}">SIGNUP</a></li>
+            <li><a th:href="@{/studentcreateorlogin}">LOGIN</a></li>
+            <li><a th:href="@{/studentcreateorlogin}">CONTACT</a></li>
+        </ul>
+
+
     </nav>
     </div>
-    
-   <div class="textcolor">
-    <a th:href="@{/storeddata}">View Stored Student Data</a>
-    <a th:href="@{/TestArena}">Start Test</a>
-    </div>
-    <div>
-        <h3>The Aim of This Web app is to enable Lecturers/Teachers of Schools to be able to carry out all their test
-        for Students</h3>
-    </div>
-
-    <br>
-    <p style="font-size: 10rem; background: green;color: rgb(255, 255, 255)">WEBSITE BUILDING IN PROGRESS</p>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p STYLE="font-size: 20px">CONTACTS</p>
-    <div class="contact" style="background: orange">
-        <img th:src="@{/watsaplogo.webp}" width="100%" height="300px" id="contact">
-        <img th:src="@{/facebooklogo.jpg}" width="100%" height="300px" id="contact">
-    </div>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <br>
-    <br>
-    <a th:href="#{contact}">back to the top</a>
+    <section class="createprofile">
+        
+        <div class="info">
+            <h2>Read This Before You Proceed</h2>
+            <p>This CBT app is designed to test Knowledge of Java programming Proficiency .To be able to access the test arena page you need to sign up with your credentials</p>
+        </div>
+      <div class="formdiv" id="formdiv">
+          <h1>Create Student Profile</h1>
+          <form action="">
+              <label for="" class="name">First Name:</label>
+          </form>
+      </div>  
+    </section>
 </div>
 </body>
 </html>

@@ -8,5 +8,4 @@ public class CbtWebAppApplication {
     public static void main(String[] args) {
         SpringApplication.run(CbtWebAppApplication.class, args);
     }
-
 }
