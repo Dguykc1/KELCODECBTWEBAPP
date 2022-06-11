@@ -9,32 +9,42 @@
         <link rel="stylesheet" th:href="@{/styles.css}">
     </head>
 <body>
-<div class="container">
-    <div class="headerOfPage">
-    <h4>KELCODE SCHOOL MANAGEMENT APP</h4>
-    <nav>
-        <ul class="navigationlist">
-            <li><a th:href="@{'#formdiv'}">SIGNUP</a></li>
-            <li><a th:href="@{/studentcreateorlogin}">LOGIN</a></li>
-            <li><a th:href="@{/studentcreateorlogin}">CONTACT</a></li>
+
+    <nav class="navbar">
+    <div class="max-width">
+    <div class="logo"><a>CODEBLAZE CBT WEB APP</a></div>
+        <ul class="menu">
+            <li><a th:href="@{/studentcreateorlogin}" class="menu-btn">HOME</a></li>
+            <li><a th:href="@{'#formdiv'}" class="menu-btn">SIGNUP</a></li>
+            <li><a th:href="@{/studentcreateorlogin}" class="menu-btn">LOGIN</a></li>
+            <li><a th:href="@{/studentcreateorlogin}" class="menu-btn">CONTACT</a></li>
         </ul>
-
-
-    </nav>
-    </div>
-    <section class="createprofile">
-        
-        <div class="info">
-            <h2>Read This Before You Proceed</h2>
-            <p>This CBT app is designed to test Knowledge of Java programming Proficiency .To be able to access the test arena page you need to sign up with your credentials</p>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
-      <div class="formdiv" id="formdiv">
-          <h1>Create Student Profile</h1>
-          <form action="">
-              <label for="" class="name">First Name:</label>
-          </form>
-      </div>  
+    </div>
+    </nav>
+    <!-- Home Section -->
+    <section class="home">
+        
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome to CodeBlaze Java CBT Proficiency Test
+
+                </div>
+                <div class="text-2">
+                    <h2>Read This Before You Proceed</h2>
+                    <p>This CBT app is designed to test Knowledge of Java programming Proficiency .To be able to access the test arena page
+                        you need to sign up with your credentials</p>
+                </div>
+            </div>  
+        </div> 
     </section>
-</div>
+<script th:src="@{'/js/jq.js'}"></script>
+<script th:src="@{'/js/script.js'}"></script>
+<script th:src="@{'/js/fontawesome.min.js'}"></script>
+<script th:src="@{'/js/waypoint.min.js'}"></script>
+<script th:src="@{'/js/owlcarousel.min.js'}"></script>
+<script th:src="@{'/js/mytyped.min.js'}"></script>
 </body>
 </html>
